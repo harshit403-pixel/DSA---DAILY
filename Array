@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+// Creating an array
+int main() {
+    int marks[50] ;         //// array declared with the size 50 index : 0 to 49 saare values garbage honge
+    cout<<marks[0] << endl;
+    cout<<marks[1] << endl;          // it will be garbage
+    
+    int marks2[4] = {1, 2, 3};           // initialized with 1 2 3  and iske bad ke indexs mai 0 hi aayega
+    cout<<marks2[0] << endl;
+    cout<<marks2[1] << endl;
+    cout<<marks2[5] << endl;          // it will be zero
+
+
+    int marks3[] = {1,2,3};          // initialized without size toh automatic 0 to 2 hoiajega
+    cout<<marks3[0] << endl;
+    cout<<marks3[1] << endl;
+    cout<<marks3[5] << endl;       //error
+
+
+    // Length of Array : size of array / size of jis bhi type ka array hai
+    int n = sizeof(marks2) / sizeof(int); 
+
+    cout<< "size of array marks 2 : "<< n << endl;
+
+    
+
+    return 0;
+}
